@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YU Sleep — Restorative Sleep, Redefined</title>
+    <script src="https://tailwindcss.com"></script>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        night: '#0B0F19',
+                        twilight: '#131B2E',
+                        moonlight: '#E2E8F0',
+                        lavender: '#818CF8',
+                        gold: '#FBBF24'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-night text-moonlight font-sans antialiased selection:bg-lavender selection:text-night">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-night/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-serif font-bold tracking-wider text-white">
+                YU <span class="text-lavender font-normal italic">Sleep</span>
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#benefits" class="hover:text-white transition">Benefits</a>
+                <a href="#ingredients" class="hover:text-white transition">Formula</a>
+                <a href="#reviews" class="hover:text-white transition">Reviews</a>
+            </div>
+            <a href="#shop" class="bg-lavender hover:bg-indigo-400 text-night font-semibold px-5 py-2.5 rounded-full text-sm transition shadow-lg shadow-lavender/20">
+                Get Better Sleep
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
+        <!-- Subtle Glow Background -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-lavender/15 rounded-full blur-[120px] -z-10"></div>
+        
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-white/5 border border-white/10 text-lavender text-xs font-semibold tracking-widest uppercase mb-6">
+                Science-Backed Nightly Ritual
+            </span>
+            <h1 class="text-4xl md:text-6xl font-serif font-bold text-white leading-tight mb-6">
+                Fall asleep faster. <br>
+                <span class="text-lavender italic font-normal">Wake up genuinely refreshed.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                YU Sleep combines highly bioavailable Magnesium Glycinate with calming botanicals to quiet racing thoughts and deepen restorative REM cycles—without morning grogginess.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#shop" class="bg-lavender hover:bg-indigo-400 text-night font-bold px-8 py-4 rounded-full text-base transition shadow-xl shadow-lavender/25">
+                    Start Your 30-Night Trial
+                </a>
+                <a href="#ingredients" class="bg-white/5 hover:bg-white/10 border border-white/15 text-white font-medium px-8 py-4 rounded-full text-base transition">
+                    Explore the Formula
+                </a>
+            </div>
+            <p class="mt-6 text-xs text-slate-500">Free shipping • 100% Melatonin-free • 60-Day Money-Back Guarantee</p>
+        </div>
+    </header>
+
+    <!-- Social Proof Bar -->
+    <section class="border-y border-white/10 bg-twilight/50 py-8">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <p class="text-2xl md:text-3xl font-bold text-white">4.9 / 5</p>
+                <p class="text-xs text-slate-400 mt-1">Average Customer Rating</p>
+            </div>
+            <div>
+                <p class="text-2xl md:text-3xl font-bold text-white">94%</p>
+                <p class="text-xs text-slate-400 mt-1">Fell Asleep Faster in Week 1</p>
+            </div>
+            <div>
+                <p class="text-2xl md:text-3xl font-bold text-white">0%</p>
+                <p class="text-xs text-slate-400 mt-1">Melatonin or Habit-Forming Fillers</p>
+            </div>
+            <div>
+                <p class="text-2xl md:text-3xl font-bold text-white">50,000+</p>
+                <p class="text-xs text-slate-400 mt-1">Restful Nights Delivered</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-24 max-w-6xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-white mb-4">Designed for your circadian rhythm</h2>
+            <p class="text-slate-400">Most sleep aids knock you out artificially. YU Sleep works with your nervous system to help you drift off naturally.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-twilight border border-white/10 p-8 rounded-2xl">
+                <div class="w-12 h-12 rounded-xl bg-lavender/10 text-lavender flex items-center justify-center mb-6 text-xl font-bold">01</div>
+                <h3 class="text-xl font-semibold text-white mb-3">Quiets Racing Thoughts</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">L-Theanine and Magnesium Glycinate encourage alpha brain waves, easing evening stress and mental chatter before your head hits the pillow.</p>
+            </div>
+            <div class="bg-twilight border border-white/10 p-8 rounded-2xl">
+                <div class="w-12 h-12 rounded-xl bg-lavender/10 text-lavender flex items-center justify-center mb-6 text-xl font-bold">02</div>
+                <h3 class="text-xl font-semibold text-white mb-3">Deepens Sleep Cycles</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Supports uninterrupted slow-wave and REM sleep so your body and mind actually recover overnight instead of tossing and turning.</p>
+            </div>
+            <div class="bg-twilight border border-white/10 p-8 rounded-2xl">
+                <div class="w-12 h-12 rounded-xl bg-lavender/10 text-lavender flex items-center justify-center mb-6 text-xl font-bold">03</div>
+                <h3 class="text-xl font-semibold text-white mb-3">Zero Morning Fog</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Formulated completely without synthetic melatonin or heavy sedatives, ensuring you wake up clear-headed and ready for the day.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredients Section -->
+    <section id="ingredients" class="py-24 bg-twilight/60 border-y border-white/10">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
+                <div>
+                    <span class="text-lavender text-xs font-semibold uppercase tracking-widest">Clean & Transparent</span>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-white mt-2">What’s Inside Every Scoop</h2>
+                </div>
+                <p class="text-slate-400 max-w-md text-sm">Third-party tested for purity. Vegan, non-GMO, sugar-free, and gentle on sensitive stomachs.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-night border border-white/10 p-6 rounded-xl">
+                    <span class="text-xs text-lavender font-mono">300 MG</span>
+                    <h4 class="text-lg font-semibold text-white mt-1 mb-2">Magnesium Glycinate</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">The gold-standard form of magnesium for muscle relaxation and nervous system calm.</p>
+                </div>
+                <div class="bg-night border border-white/10 p-6 rounded-xl">
+                    <span class="text-xs text-lavender font-mono">200 MG</span>
+                    <h4 class="text-lg font-semibold text-white mt-1 mb-2">L-Theanine</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">An amino acid found in green tea that promotes relaxation without causing drowsiness.</p>
+                </div>
+                <div class="bg-night border border-white/10 p-6 rounded-xl">
+                    <span class="text-xs text-lavender font-mono">50 MG</span>
+                    <h4 class="text-lg font-semibold text-white mt-1 mb-2">Apigenin</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">A bioflavonoid derived from chamomile flowers that helps initiate deep, restful sleep.</p>
+                </div>
+                <div class="bg-night border border-white/10 p-6 rounded-xl">
+                    <span class="text-xs text-lavender font-mono">150 MG</span>
+                    <h4 class="text-lg font-semibold text-white mt-1 mb-2">Tart Cherry Extract</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Rich in natural antioxidants that support your body's own healthy sleep-wake cycle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="reviews" class="py-24 max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-white text-center mb-16">Trusted by Light Sleepers Everywhere</h2>
